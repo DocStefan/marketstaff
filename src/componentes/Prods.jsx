@@ -37,7 +37,7 @@ function Prods() {
 
     try 
     {
-      let response = await axios.get("http://localhost:3005/auth//GetAllProductosADMIN", {})
+      let response = await axios.get("https://marketstaffinicial-e5bf41af8855.herokuapp.com/auth//GetAllProductosADMIN", {})
 
       if(response) {
        setProds(prods = [ ...response.data])
@@ -245,7 +245,7 @@ function Prods() {
       //   {NombreProveedor: NombreProveedor, nombre: nombre, nombrec: nombrec, cantidadd: cantidad, precioap: precioc, proveedor: proveedor, precioc: preciop, foto: urlfoto}
       //  ])
 
-       let response = await axios.post("http://localhost:3005/auth/NewProduct", {Nombre: nombre, NombreComercial: nombrec, Stock: cantidad, PrecioVentaPublico: precioc, NombreProveedor: proveedor, PrecioCompraProveedor: preciop, Foto: urlfoto})
+       let response = await axios.post("https://marketstaffinicial-e5bf41af8855.herokuapp.com/auth/NewProduct", {Nombre: nombre, NombreComercial: nombrec, Stock: cantidad, PrecioVentaPublico: precioc, NombreProveedor: proveedor, PrecioCompraProveedor: preciop, Foto: urlfoto})
 
         if(response){
           if(response.data.ok == false) {
@@ -320,7 +320,7 @@ function Prods() {
   //  })
    if(eliminador != "") {
 
-    let response = await axios.delete("http://localhost:3005/auth/DeleteProduct", {data:{id: eliminador}})
+    let response = await axios.delete("https://marketstaffinicial-e5bf41af8855.herokuapp.com/auth/DeleteProduct", {data:{id: eliminador}})
 
      if(response){
       if(response.data.ok == false){
@@ -396,7 +396,7 @@ function Prods() {
 
   //  )
     
-     let response = await axios.put("http://localhost:3005/auth/GetProductToUpdateByID", {id: buscador})
+     let response = await axios.put("https://marketstaffinicial-e5bf41af8855.herokuapp.com/auth/GetProductToUpdateByID", {id: buscador})
 
      if(response) {
       if(response.data.ok != false) {
@@ -507,7 +507,7 @@ function Prods() {
         //  {id: id, nombre: nombre, nombrec: nombrec, cantidadd: cantidad, precioap: precioc, proveedor: proveedor, precioc: preciop, foto: urlfoto}
         // ])
 
-        let response = await axios.put("http://localhost:3005/auth/UpdateProductById", {id: buscador, Nombre: nombre, NombreComercial: nombrec, Stock: cantidad, PrecioVentaPublico: precioc, Proveedor: proveedor, PrecioCompraProveedor: preciop, Foto: urlfoto})
+        let response = await axios.put("https://marketstaffinicial-e5bf41af8855.herokuapp.com/auth/UpdateProductById", {id: buscador, Nombre: nombre, NombreComercial: nombrec, Stock: cantidad, PrecioVentaPublico: precioc, Proveedor: proveedor, PrecioCompraProveedor: preciop, Foto: urlfoto})
         
         if(response) {
           if(response.data.ok != false) {

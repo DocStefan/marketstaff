@@ -16,7 +16,7 @@ function Cata() {
 
      try 
      {
-       let response = await axios.get("http://localhost:3005/auth/GetAllProductos", {})
+       let response = await axios.get("https://marketstaffinicial-e5bf41af8855.herokuapp.com/auth/GetAllProductos", {})
 
        if(response) {
         setProductos(productos = [ ...response.data])

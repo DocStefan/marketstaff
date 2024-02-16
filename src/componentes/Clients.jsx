@@ -36,7 +36,7 @@ function Clients() {
 
     try 
     {
-      let response = await axios.get("http://localhost:3005/auth//GetAllClientes", {})
+      let response = await axios.get("https://marketstaffinicial-e5bf41af8855.herokuapp.com/auth//GetAllClientes", {})
 
       if(response) {
        setClients(clients = [ ...response.data])
@@ -282,7 +282,7 @@ function Clients() {
         //  ...provs,
         //  {id: id, nombre: nombre, cuit: cuit, foto: foto, contacto: numero}
         // ])
-        let response = await axios.post("http://localhost:3005/auth/NewCliente", {Nombre: nombre, CUIT: cuit, Contacto: numero, Foto: foto})
+        let response = await axios.post("https://marketstaffinicial-e5bf41af8855.herokuapp.com/auth/NewCliente", {Nombre: nombre, CUIT: cuit, Contacto: numero, Foto: foto})
 
         if(response){
           if(response.data.ok == false) {
@@ -409,7 +409,7 @@ function Clients() {
 
 if(eliminador != "") {
 
-  let response = await axios.delete("http://localhost:3005/auth/DeleteCliente", {data:{id: eliminador}})
+  let response = await axios.delete("https://marketstaffinicial-e5bf41af8855.herokuapp.com/auth/DeleteCliente", {data:{id: eliminador}})
 
    if(response){
     if(response.data.ok == false){
@@ -527,7 +527,7 @@ if(eliminador != "") {
 
   //  )
 
-  let response = await axios.put("http://localhost:3005/auth/GetClienteToUpdateByID", {id: buscador})
+  let response = await axios.put("https://marketstaffinicial-e5bf41af8855.herokuapp.com/auth/GetClienteToUpdateByID", {id: buscador})
 
   if(response) {
    if(response.data.ok != false) {
@@ -709,7 +709,7 @@ if(eliminador != "") {
         //  {id: id, nombre: nombre, cuit: cuit, foto: foto, contacto: numero}
         // ])
 
-        let response = await axios.put("http://localhost:3005/auth/UpdateClienteById", {id: buscador, Nombre: nombre, CUIT: cuit, Contacto: numero , Foto: foto})
+        let response = await axios.put("https://marketstaffinicial-e5bf41af8855.herokuapp.com/auth/UpdateClienteById", {id: buscador, Nombre: nombre, CUIT: cuit, Contacto: numero , Foto: foto})
         
         if(response) {
           if(response.data.ok != false) {

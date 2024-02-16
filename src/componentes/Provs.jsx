@@ -35,7 +35,7 @@ function Provs() {
 
     try 
     {
-      let response = await axios.get("http://localhost:3005/auth//GetAllProveedores", {})
+      let response = await axios.get("https://marketstaffinicial-e5bf41af8855.herokuapp.com/auth//GetAllProveedores", {})
 
       if(response) {
        setProvs(provs = [ ...response.data])
@@ -227,7 +227,7 @@ function Provs() {
         //  ...provs,
         //  {id: id, nombre: nombre, cuit: cuit, foto: foto, contacto: numero}
         // ])
-        let response = await axios.post("http://localhost:3005/auth/NewProveedor", {Nombre: nombre, CUIT: cuit, Contacto: numero, Foto: foto})
+        let response = await axios.post("https://marketstaffinicial-e5bf41af8855.herokuapp.com/auth/NewProveedor", {Nombre: nombre, CUIT: cuit, Contacto: numero, Foto: foto})
 
         if(response){
           if(response.data.ok == false) {
@@ -306,7 +306,7 @@ function Provs() {
 
   if(eliminador != "") {
 
-    let response = await axios.delete("http://localhost:3005/auth/DeleteProveedor", {data:{id: eliminador}})
+    let response = await axios.delete("https://marketstaffinicial-e5bf41af8855.herokuapp.com/auth/DeleteProveedor", {data:{id: eliminador}})
 
      if(response){
       if(response.data.ok == false){
@@ -379,7 +379,7 @@ function Provs() {
 
   //  )
 
-  let response = await axios.put("http://localhost:3005/auth/GetProveedorToUpdateByID", {id: buscador})
+  let response = await axios.put("https://marketstaffinicial-e5bf41af8855.herokuapp.com/auth/GetProveedorToUpdateByID", {id: buscador})
 
   if(response) {
    if(response.data.ok != false) {
@@ -484,7 +484,7 @@ function Provs() {
         //  {id: id, nombre: nombre, cuit: cuit, foto: foto, contacto: numero}
         // ])
 
-        let response = await axios.put("http://localhost:3005/auth/UpdateProveedorById", {id: buscador, Nombre: nombre, CUIT: cuit, Contacto: numero , Foto: foto})
+        let response = await axios.put("https://marketstaffinicial-e5bf41af8855.herokuapp.com/auth/UpdateProveedorById", {id: buscador, Nombre: nombre, CUIT: cuit, Contacto: numero , Foto: foto})
         
         if(response) {
           if(response.data.ok != false) {
