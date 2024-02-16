@@ -37,7 +37,7 @@ function Prods() {
 
     try 
     {
-      let response = await axios.get("https://marketstaffinicial-e5bf41af8855.herokuapp.com/auth//GetAllProductosADMIN", {})
+      let response = await axios.get("https://marketstaffinicial-e5bf41af8855.herokuapp.com/auth/GetAllProductosADMIN", {})
 
       if(response) {
        setProds(prods = [ ...response.data])
