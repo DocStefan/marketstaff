@@ -1,0 +1,129 @@
+.contenedor_reportes {
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-flow: column;
+ height: 80vh;
+
+}
+
+.primera_seccion_botones {
+
+ flex: 100%;
+
+}
+
+.segunda_seccion_botones {
+
+ flex: 100%;
+
+}
+
+.tercera_seccion_botones {
+
+ flex: 100%;
+
+}
+
+.seccionPPM {
+
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-flow: column;
+ padding-left:20px;
+
+}
+
+.seccionIPC {
+
+ display: flex;
+ align-items: center;
+ flex-flow: column;
+
+}
+
+.seccionUV {
+
+ display: flex;
+ align-items: center;
+ flex-flow: column;    
+
+}
+
+.seccionGP {
+
+ display: flex;
+ align-items: center;
+ flex-flow: column;
+
+}
+
+.seccionPC {
+
+ display: flex;
+ align-items: center;
+ flex-flow: column;
+
+}
+
+canvas {
+
+ width: 1000px;
+
+}
+
+.derPPM canvas {
+
+ width: 1000px;
+
+}
+
+.botonreportesPPM {
+
+ width: 100px;
+ height: auto;
+ font-size: 13px;
+ padding-top: 5px;
+ padding-bottom: 5px
+
+}
+
+@media (max-width:1000px) {
+
+    canvas {
+
+     width: 500px;
+    
+    }
+
+    .derPPM canvas {
+
+        width: 500px;
+       
+    }
+
+    .seccionPPM {
+
+     margin-top: 120px;
+
+    }
+    
+}
+
+@media (max-width:500px) {
+
+ canvas {
+
+  width: 300px;
+
+ }
+
+ .derPPM canvas {
+
+    width: 300px;
+   
+}
+
+}

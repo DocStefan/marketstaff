@@ -1,0 +1,205 @@
+.tabla {
+
+ margin: auto;
+ margin-top: 75px;
+ border: solid rgb(33, 33, 110);
+ table-layout: fixed;
+ width: 1600px;
+
+}
+
+.aceldas {
+
+ width: 200px;
+ height: 80px;
+ background-color: lightblue;
+ font-size: 20px;
+ font-family: Arial;
+ border: solid black 1px;
+ color: rgb(63, 63, 158);
+
+}
+
+.celdas {
+
+ width: 200px;
+ height: 100px;
+ background-color: rgb(246, 246, 248);
+ text-align: center;
+ padding: none;
+ border: solid black 1px;
+ font-family: Tahoma;
+ font-size: 20px;
+
+}
+
+.creador {
+
+ width: 200px;
+ height: 100px;
+ background-color: rgb(246, 246, 248);
+ text-align: end;
+ padding: none;
+ border: solid black 1px;
+ font-family: Tahoma;
+ font-size: 20px;
+
+}
+
+.creador input {
+ 
+ height: 30px;
+ width: 195px;
+ font-size: small;
+ border-radius: 5px;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.error {
+
+ display: block;
+ font-size: 20px;
+ color: red;
+ margin-top: 5px;
+ margin-bottom: 5px;
+ display: none;
+
+}
+
+.exito {
+
+  display: block;
+  font-size: 20px;
+  color: rgb(29, 224, 29);
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: none;
+ 
+ }
+
+.boton {
+
+ display: inline;
+ width: 200px;
+ height: 50px;
+ background-color: rgb(225, 235, 238);
+ color: rgb(63, 63, 158);
+ margin-right: 15px;
+ margin-top:20px;
+ margin-bottom: 20px;
+ border: none;
+
+}
+
+.boton:hover {
+
+ border: none;
+ background-color: rgb(131, 143, 148);
+
+}
+
+.create {
+
+ display: none;
+
+}
+
+.botonb {
+
+ display: none;
+
+}
+
+.botonesb1 {
+
+ margin-top: 25px;
+ margin-bottom: 25px;
+
+}
+
+.QPONLabel {
+
+ margin-top: 50px;
+ margin-bottom: 30px;
+ font-size: 25px;
+ text-decoration: underline;
+ color: red;
+ font-family: 'Times New Roman';
+ 
+
+}
+
+.QPONInput {
+
+ display: block;
+ margin: auto;
+ margin-bottom: 15px;
+ width: 200px;
+ border-radius: 5px;
+
+}
+
+
+.tabla img{
+
+ width: 190px;
+ height: 90px;
+
+}
+
+.BPONLabel {
+
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 25px;
+  text-decoration: underline;
+  color: rgb(63, 63, 158);
+  font-family: 'Times New Roman';
+  
+}
+ 
+.BPONInput {
+ 
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
+  width: 200px;
+  border-radius: 5px;
+ 
+}
+
+.segundaM {
+
+ display: none;
+
+}
+
+.semi {
+
+  color: rgb(63, 63, 158);
+
+
+}
+
+@media (max-width: 800px) {
+
+.botonesb1 {
+
+ margin-left: 0px;
+
+}
+
+.boton {
+
+ margin-top: 10px;
+ margin-bottom: 10px;
+
+}
+
+}

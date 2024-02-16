@@ -1,0 +1,36 @@
+footer {
+    background-color: lightblue;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 120px;
+  }
+  
+  .containerfooter {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+  }
+  
+  .info {
+    flex-basis: 22%;
+  }
+  
+  .info h3 {
+    margin-bottom: 10px;
+  }
+  
+  .info ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .info ul li {
+
+    height: 10px;
+    margin-bottom: 20px;
+  
+  }
+  

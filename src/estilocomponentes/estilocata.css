@@ -1,0 +1,50 @@
+.contenedorflex{
+
+ width: 100%;
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: flex-start;
+
+}
+
+.caja {
+
+ width: 191px;
+ height: 500px;
+ margin: 10px;
+ border: solid rgb(63, 63, 158) 1px;
+ border-radius: 10px;
+ position: relative;
+
+}
+
+.fotoprod {
+
+  margin-top: 20px;
+  width: 180px;
+  height: 200px;
+
+}
+
+.nombreprod {
+
+ display: block;
+ font-size: 21px;
+ font-family: sans-serif;
+ margin-top: 80px;
+ margin-left: 10px;
+ margin-right: 10px;
+
+}
+
+.precioprod {
+
+ display: block;
+ font-size: 18px;
+ font-family: Arial;
+ position: absolute;
+ bottom: 90px;
+ margin-left: 76px;
+
+}

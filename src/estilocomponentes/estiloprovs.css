@@ -1,0 +1,260 @@
+.flexi {
+
+ justify-content: center;
+
+}
+
+.botoneliminador {
+
+ background-color: rgb(190, 71, 71);
+ color: white;
+ margin-bottom: -10px;
+ margin-top: 10px;
+ width: 50px;
+ float: right;
+ display: none;
+
+}
+
+.botoneliminador:hover {
+
+ background-color: red;
+
+}
+
+.cajaprov {
+
+ width: 400px;
+ height: 650px;
+ background-color: rgb(221, 236, 241);
+ margin: 20px;
+ margin-left: 30px;
+ margin-right: 30px;
+ border-radius: 10px;
+
+}
+
+.fotoprov {
+
+ height: 350px;
+ width: 350px;
+ margin-top: 20px;
+
+}
+
+
+.nombreprov, .idprov, .cuitprov, .contactoprov{
+
+ display: block;
+ margin-top: 10px;
+ margin-bottom: 10px;
+
+}
+
+.idprov {
+
+ margin-top: 20px;   
+ font-family: tahoma;
+ font-size: 20px;
+
+}
+
+.nombreprov {
+
+ font-family: sans-serif;
+ font-size: 30px;
+ margin-top: 20px;
+ margin-bottom: 30px;
+
+}
+
+.cuitprov {
+
+ font-family: Arial;
+ font-size: 15px;
+
+}
+
+.contactoprov {
+
+ font-family: arial;
+ font-size: 15px;
+
+}
+
+.botonprov {
+
+ margin-bottom: 0px;
+
+}
+
+.inputprov {
+
+ width: 350px;
+ 
+
+}
+
+.cajaprovnueva {
+
+ background-color: rgb(221, 236, 241);
+ width: 400px;
+ height: 460px;
+ margin: auto;
+ margin-bottom: 20px;
+ margin-top: 40px;
+ border-radius: 10px;
+ padding-top: 20px;
+ display: none;
+
+}
+
+.botonprovnueva {
+
+ background-color: lightblue;
+
+}
+
+.cajaproveliminado {
+
+ width: 400px;
+ height: 400px;
+ background-color: rgb(221, 236, 241);
+ padding-top: 50px;
+ border-radius: 10px;
+ margin: auto;
+ margin-top: 40px;
+ margin-bottom: 20px;
+
+}
+
+.tituloproveliminado {
+
+ font-family: Arial;
+ font-size: 18px;
+ color: red;
+
+}
+
+.inputproveliminar {
+
+ margin-top: 40px;
+
+}
+
+.cajaprovmodificado {
+
+    width: 400px;
+    height: 400px;
+    background-color: rgb(221, 236, 241);
+    padding-top: 50px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: none;
+   
+}
+
+.tituloprovmodificado {
+
+ font-family: sans-serif;
+ font-size: 18px;
+
+}
+
+.inputprovmodificado {
+
+ margin-top: 40px;
+
+}
+
+.cajaprovmodificadoB {
+
+    width: 400px;
+    height: 500px;
+    background-color: rgb(221, 236, 241);
+    padding-top: 50px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: none;
+   
+}
+
+
+.cajaprovmodificadoC {
+
+    width: 400px;
+    height: 200px;
+    background-color: rgb(221, 236, 241);
+    padding-top: 50px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: none;
+
+}
+
+
+.exitoprov {
+
+ display: block;
+
+}
+
+@media (max-width:500px) {
+
+.cajaprov {
+
+ margin-left: 0px;
+ margin-right: 0px;
+ width: 300px;
+
+}
+
+.fotoprov {
+
+    width: 280px;
+
+}
+
+.cajaprovnueva {
+
+ width: 300px;
+
+}
+
+.inputprov {
+
+ width: 270px;
+
+}
+
+.cajaproveliminado {
+
+ width: 300px;
+
+}
+
+.cajaprovmodificado {
+
+ width: 300px;
+
+}
+
+.cajaprovmodificadoB {
+
+    width: 300px;
+
+}
+
+.cajaprovmodificadoC {
+
+ width: 300px;
+
+}
+
+}
