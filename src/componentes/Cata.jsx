@@ -19,8 +19,9 @@ function Cata() {
        let response = await axios.get("https://marketstaffinicial-e5bf41af8855.herokuapp.com/auth/GetAllProductos", {})
 
        if(response) {
-        setProductos(productos = [...response.data])
         console.log(response.data)
+        setProductos(productos = [...response.data])
+        
        } else {
          throw new Error
        }
